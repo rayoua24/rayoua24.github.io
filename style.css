@@ -104,8 +104,6 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
-    justify-content: center; /* Centers the grid horizontally */
-    margin: 0 auto; /* Ensures it centers within the section */
 }
 
 .service-card {
@@ -222,3 +220,11 @@ footer {
         font-size: 2rem;
     }
 
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-cards {
+        grid-template-columns: 1fr;
+    }
+}
