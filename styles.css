@@ -80,7 +80,21 @@ nav a:hover, button:hover {
   background-color: #cc5200;
 }
 
-/* Footer styling */
+/* Section styling */
+section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.service-item {
+  margin-bottom: 30px;
+}
+
+.service-item h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
 footer {
   background-color: #333;
   color: white;
