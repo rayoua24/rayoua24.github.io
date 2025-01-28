@@ -24,6 +24,14 @@ document.getElementById('langToggle').addEventListener('click', function () {
         document.getElementById('footerText').textContent = '© 2025 FixMyDevice - All rights reserved.';
         document.getElementById('langToggle').textContent = 'FR';
 
+        // Translate services section
+        document.querySelector('.service-card:nth-child(1) h3').textContent = 'Laptops';
+        document.querySelector('.service-card:nth-child(1) p').textContent = 'Repair and optimization for all types of laptops.';
+        document.querySelector('.service-card:nth-child(2) h3').textContent = 'Gaming Consoles';
+        document.querySelector('.service-card:nth-child(2) p').textContent = 'Quick repairs for PlayStation, Xbox, Nintendo Switch, and more.';
+        document.querySelector('.service-card:nth-child(3) h3').textContent = 'Maintenance & Optimization';
+        document.querySelector('.service-card:nth-child(3) p').textContent = 'Services to boost the performance of your devices.';
+
         // Translate contact form labels
         document.querySelector('label[for="name"]').textContent = 'Name';
         document.querySelector('label[for="email"]').textContent = 'Email';
@@ -50,6 +58,14 @@ document.getElementById('langToggle').addEventListener('click', function () {
         document.querySelector('button[type="submit"]').textContent = 'Envoyer';
         document.getElementById('footerText').textContent = '© 2025 FixMyDevice - Tous droits réservés.';
         document.getElementById('langToggle').textContent = 'EN';
+
+        // Translate services section
+        document.querySelector('.service-card:nth-child(1) h3').textContent = 'Ordinateurs portables';
+        document.querySelector('.service-card:nth-child(1) p').textContent = 'Réparation et optimisation pour tous types de laptops.';
+        document.querySelector('.service-card:nth-child(2) h3').textContent = 'Consoles de jeux';
+        document.querySelector('.service-card:nth-child(2) p').textContent = 'Réparation rapide pour PlayStation, Xbox, Nintendo Switch, et plus.';
+        document.querySelector('.service-card:nth-child(3) h3').textContent = 'Maintenance & Optimisation';
+        document.querySelector('.service-card:nth-child(3) p').textContent = 'Des services pour améliorer la performance de vos appareils.';
 
         // Translate contact form labels
         document.querySelector('label[for="name"]').textContent = 'Nom';
