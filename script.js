@@ -1,27 +1,19 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const languageToggle = document.getElementById('languageToggle');
-    let currentLang = 'en';
+function toggleLanguage() {
+  // Toggle visibility of content based on the current language
+  const englishContent = document.querySelectorAll('.en');
+  const frenchContent = document.querySelectorAll('.fr');
+  
+  const isFrench = Array.from(englishContent).some(el => el.style.display === 'none');
 
-    // Language toggle function
-    function toggleLanguage() {
-        currentLang = currentLang === 'en' ? 'fr' : 'en';
-        document.documentElement.lang = currentLang;
-        
-        document.querySelectorAll('.lang-switch').forEach(element => {
-            if(element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-                element.placeholder = element.getAttribute(`data-${currentLang}`);
-            } else {
-                element.textContent = element.getAttribute(`data-${currentLang}`);
-            }
-        });
-    }
-
-    languageToggle.addEventListener('click', toggleLanguage);
-
-    // Form submission
-    document.getElementById('contactForm').addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert(currentLang === 'en' ? 'Thank you! We will contact you soon.' : 'Merci! Nous vous contacterons bientôt.');
-        e.target.reset();
-    });
-});
+  if (isFrench) {
+    // Switch to French
+    englishContent.forEach(el => el.style.display = 'block');
+    frenchContent.forEach(el => el.style.display = 'none');
+    document.getElementById('lang-toggle').textContent = 'English';
+  } else {
+    // Switch to English
+    englishContent.forEach(el => el.style.display = 'none');
+    frenchContent.forEach(el => el.style.display = 'block');
+    document.getElementById('lang-toggle').textContent = 'Français';
+  }
+}
