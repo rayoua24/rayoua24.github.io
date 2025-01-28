@@ -3,12 +3,11 @@ document.getElementById('langToggle').addEventListener('click', function () {
     const isFrench = document.documentElement.lang === 'fr';
 
     if (isFrench) {
-        document.documentElement.lang = 'en';
+        document.documentElement.lang = 'en'; // Change to English
 
-        // Changer le texte en anglais
+        // Update text to English
         document.getElementById('serviceLink').textContent = 'Services';
         document.getElementById('aboutLink').textContent = 'About Us';
-        document.getElementById('testimonialsLink').textContent = 'Testimonials';
         document.getElementById('contactLink').textContent = 'Contact';
         document.getElementById('heroTitle').textContent = 'Repair your devices quickly and efficiently';
         document.getElementById('heroDescription').textContent = 'Laptops, gaming consoles, and more. We repair all your devices with care and professionalism.';
@@ -16,15 +15,9 @@ document.getElementById('langToggle').addEventListener('click', function () {
         document.getElementById('servicesTitle').textContent = 'Our Services';
         document.getElementById('aboutTitle').textContent = 'About FixMyDevice';
         document.getElementById('aboutDescription').textContent = 'We specialize in laptop and gaming console repair. Fast, reliable service.';
-        document.getElementById('testimonialsTitle').textContent = 'What Our Clients Say';
-        document.getElementById('testimonial1').textContent = '"The service is fast and professional. Highly recommend!"';
-        document.getElementById('testimonial2').textContent = '"Perfect console repair, affordable pricing, very satisfied!"';
-        document.getElementById('testimonial3').textContent = '"FixMyDevice is my go-to for all my repairs. Very responsive!"';
-        document.querySelector('button[type="submit"]').textContent = 'Send';
-        document.getElementById('footerText').textContent = '© 2025 FixMyDevice - All rights reserved.';
-        document.getElementById('langToggle').textContent = 'FR';
+        document.getElementById('langToggle').textContent = 'FR'; // Switch button to FR
 
-        // Translate services section
+        // Services section
         document.querySelector('.service-card:nth-child(1) h3').textContent = 'Laptops';
         document.querySelector('.service-card:nth-child(1) p').textContent = 'Repair and optimization for all types of laptops.';
         document.querySelector('.service-card:nth-child(2) h3').textContent = 'Gaming Consoles';
@@ -32,18 +25,21 @@ document.getElementById('langToggle').addEventListener('click', function () {
         document.querySelector('.service-card:nth-child(3) h3').textContent = 'Maintenance & Optimization';
         document.querySelector('.service-card:nth-child(3) p').textContent = 'Services to boost the performance of your devices.';
 
-        // Translate contact form labels
+        // Contact form
         document.querySelector('label[for="name"]').textContent = 'Name';
         document.querySelector('label[for="email"]').textContent = 'Email';
         document.querySelector('label[for="message"]').textContent = 'Message';
+        document.querySelector('button[type="submit"]').textContent = 'Send';
+
+        // Footer
+        document.getElementById('footerText').textContent = '© 2025 FixMyDevice - All rights reserved.';
 
     } else {
-        document.documentElement.lang = 'fr';
+        document.documentElement.lang = 'fr'; // Change to French
 
-        // Changer le texte en français
+        // Update text to French
         document.getElementById('serviceLink').textContent = 'Services';
         document.getElementById('aboutLink').textContent = 'À propos';
-        document.getElementById('testimonialsLink').textContent = 'Témoignages';
         document.getElementById('contactLink').textContent = 'Contact';
         document.getElementById('heroTitle').textContent = 'Réparez vos appareils, rapidement et efficacement';
         document.getElementById('heroDescription').textContent = 'Ordinateurs portables, consoles de jeux, et plus encore. Nous réparons tous vos appareils avec soin et professionnalisme.';
@@ -51,15 +47,9 @@ document.getElementById('langToggle').addEventListener('click', function () {
         document.getElementById('servicesTitle').textContent = 'Nos Services';
         document.getElementById('aboutTitle').textContent = 'À propos de FixMyDevice';
         document.getElementById('aboutDescription').textContent = 'Nous sommes spécialisés dans la réparation d\'ordinateurs portables et de consoles de jeux. Grâce à notre expertise et à nos services de qualité, nous vous garantissons une réparation rapide et efficace.';
-        document.getElementById('testimonialsTitle').textContent = 'Ce que nos clients disent';
-        document.getElementById('testimonial1').textContent = '"Le service est rapide et professionnel. Je recommande !"';
-        document.getElementById('testimonial2').textContent = '"Réparation de ma console parfaite, prix abordables, très satisfait !"';
-        document.getElementById('testimonial3').textContent = '"FixMyDevice est mon go-to pour toutes mes réparations. Très réactifs!"';
-        document.querySelector('button[type="submit"]').textContent = 'Envoyer';
-        document.getElementById('footerText').textContent = '© 2025 FixMyDevice - Tous droits réservés.';
-        document.getElementById('langToggle').textContent = 'EN';
+        document.getElementById('langToggle').textContent = 'EN'; // Switch button to EN
 
-        // Translate services section
+        // Services section
         document.querySelector('.service-card:nth-child(1) h3').textContent = 'Ordinateurs portables';
         document.querySelector('.service-card:nth-child(1) p').textContent = 'Réparation et optimisation pour tous types de laptops.';
         document.querySelector('.service-card:nth-child(2) h3').textContent = 'Consoles de jeux';
@@ -67,9 +57,13 @@ document.getElementById('langToggle').addEventListener('click', function () {
         document.querySelector('.service-card:nth-child(3) h3').textContent = 'Maintenance & Optimisation';
         document.querySelector('.service-card:nth-child(3) p').textContent = 'Des services pour améliorer la performance de vos appareils.';
 
-        // Translate contact form labels
+        // Contact form
         document.querySelector('label[for="name"]').textContent = 'Nom';
         document.querySelector('label[for="email"]').textContent = 'Email';
         document.querySelector('label[for="message"]').textContent = 'Message';
+        document.querySelector('button[type="submit"]').textContent = 'Envoyer';
+
+        // Footer
+        document.getElementById('footerText').textContent = '© 2025 FixMyDevice - Tous droits réservés.';
     }
 });
