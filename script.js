@@ -4,7 +4,7 @@ document.getElementById('langToggle').addEventListener('click', function () {
 
     if (isFrench) {
         document.documentElement.lang = 'en';
-        
+
         // Changer le texte en anglais
         document.getElementById('serviceLink').textContent = 'Services';
         document.getElementById('aboutLink').textContent = 'About Us';
@@ -23,9 +23,15 @@ document.getElementById('langToggle').addEventListener('click', function () {
         document.querySelector('button[type="submit"]').textContent = 'Send';
         document.getElementById('footerText').textContent = '© 2025 FixMyDevice - All rights reserved.';
         document.getElementById('langToggle').textContent = 'FR';
+
+        // Translate contact form labels
+        document.querySelector('label[for="name"]').textContent = 'Name';
+        document.querySelector('label[for="email"]').textContent = 'Email';
+        document.querySelector('label[for="message"]').textContent = 'Message';
+
     } else {
         document.documentElement.lang = 'fr';
-        
+
         // Changer le texte en français
         document.getElementById('serviceLink').textContent = 'Services';
         document.getElementById('aboutLink').textContent = 'À propos';
@@ -44,5 +50,10 @@ document.getElementById('langToggle').addEventListener('click', function () {
         document.querySelector('button[type="submit"]').textContent = 'Envoyer';
         document.getElementById('footerText').textContent = '© 2025 FixMyDevice - Tous droits réservés.';
         document.getElementById('langToggle').textContent = 'EN';
+
+        // Translate contact form labels
+        document.querySelector('label[for="name"]').textContent = 'Nom';
+        document.querySelector('label[for="email"]').textContent = 'Email';
+        document.querySelector('label[for="message"]').textContent = 'Message';
     }
 });
