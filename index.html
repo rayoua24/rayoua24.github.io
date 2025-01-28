@@ -4,68 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FixMyDevice - Réparation d'appareils</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>FixMyDevice - Réparation d'ordinateurs et consoles</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Blue Header Section -->
+    <!-- Header -->
     <header>
+        <div class="logo">
+            <h1 id="siteName">FixMyDevice</h1>
+        </div>
         <nav>
-            <div class="logo">FixMyDevice</div>
-            <ul class="nav-links">
-                <li><a href="#" id="serviceLink">Services</a></li>
+            <ul>
+                <li><a href="#services" id="serviceLink">Services</a></li>
                 <li><a href="#about" id="aboutLink">À propos</a></li>
+                <li><a href="#testimonials" id="testimonialsLink">Témoignages</a></li>
                 <li><a href="#contact" id="contactLink">Contact</a></li>
+                <li><button id="langToggle">EN</button></li>
             </ul>
-            <button id="langToggle">EN</button>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <h2 id="heroTitle">Réparez vos appareils, rapidement et efficacement</h2>
-        <p id="heroDescription">Ordinateurs portables, consoles de jeux, et plus encore. Nous réparons tous vos appareils avec soin et professionnalisme.</p>
-        <button id="ctaButton">Demander une réparation</button>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <h2 id="heroTitle">Réparez vos appareils, rapidement et efficacement</h2>
+            <p id="heroDescription">Ordinateurs portables, consoles de jeux, et plus encore. Nous réparons tous vos appareils avec soin et professionnalisme.</p>
+            <a href="#contact" class="cta-button" id="ctaButton">Demander une réparation</a>
+        </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2 id="servicesTitle">Nos Services</h2>
-        <div class="service-cards">
-            <div class="service-card">
-                <h3>Laptops</h3>
-                <p>Réparation et optimisation pour tous types de laptops.</p>
+        <!-- Services Section -->
+        <section id="services">
+            <h2 id="servicesTitle">Nos Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Ordinateurs portables</h3>
+                    <p>Réparation et optimisation pour tous types de laptops.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Consoles de jeux</h3>
+                    <p>Réparation rapide pour PlayStation, Xbox, Nintendo Switch, et plus.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Maintenance et optimisation</h3>
+                    <p>Des services pour améliorer la performance de vos appareils.</p>
+                </div>
             </div>
-            <div class="service-card">
-                <h3>Gaming Consoles</h3>
-                <p>Réparation rapide pour PlayStation, Xbox, Nintendo Switch, et plus.</p>
-            </div>
-            <div class="service-card">
-                <h3>Maintenance & Optimisation</h3>
-                <p>Des services pour améliorer la performance de vos appareils.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2 id="aboutTitle">À propos de FixMyDevice</h2>
-        <p id="aboutDescription">Nous sommes spécialisés dans la réparation d'ordinateurs portables et de consoles de jeux. Grâce à notre expertise et à nos services de qualité, nous vous garantissons une réparation rapide et efficace.</p>
-    </section>
+        <!-- About Section -->
+        <section id="about">
+            <h2 id="aboutTitle">À propos de FixMyDevice</h2>
+            <p id="aboutDescription">Nous sommes spécialisés dans la réparation d'ordinateurs et de consoles de jeux. Grâce à notre expertise et à nos services de qualité, nous vous garantissons une réparation rapide et efficace.</p>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contactez-nous</h2>
-        <form>
-            <label for="name">Nom</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
-    </section>
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <h2 id="testimonialsTitle">Ce que nos clients disent</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p id="testimonial1">"Le service est rapide et professionnel. Je recommande !"</p>
+                    <span>- Marc L.</span>
+                </div>
+                <div class="testimonial-card">
+                    <p id="testimonial2">"Réparation de ma console parfaite, prix abordables, très satisfait !"</p>
+                    <span>- Sophie D.</span>
+                </div>
+                <div class="testimonial-card">
+                    <p id="testimonial3">"FixMyDevice est mon go-to pour toutes mes réparations. Très réactifs!"</p>
+                    <span>- Alexandre V.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <form>
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
