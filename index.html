@@ -1,90 +1,66 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FixMyDevice.ca - Réparation Expert Électronique</title>
+    <title>FixMyDevice - Professional Repair Services</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Floating Background Elements -->
-    <div class="gradient-blob"></div>
-    <div class="gradient-blob"></div>
-
-    <header class="glass-nav">
-        <nav>
-            <div class="logo">
-                <span class="logo-icon">🛠</span>
-                <span>FixMyDevice</span>.ca
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home" data-i18n="home">Accueil</a></li>
-                <li><a href="#services" data-i18n="services">Services</a></li>
-                <li><a href="#about" data-i18n="about">À Propos</a></li>
-                <li><a href="#contact" data-i18n="contact">Contact</a></li>
-                <li><button id="languageToggle" class="lang-toggle">FR/EN</button></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+    <header>
+        <div class="container">
+            <h1 id="logo">FixMyDevice.ca</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services" class="lang-switch" data-en="Services" data-fr="Services"></a></li>
+                    <li><a href="#about" class="lang-switch" data-en="About" data-fr="À propos"></a></li>
+                    <li><a href="#contact" class="lang-switch" data-en="Contact" data-fr="Contact"></a></li>
+                </ul>
+            </nav>
+            <button id="languageToggle">FR/EN</button>
+        </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 data-i18n="heroTitle">Réparation Express<br>de vos Appareils</h1>
-                <p class="subtitle" data-i18n="heroText">Réparations garanties en 24h pour consoles et ordinateurs</p>
-                <div class="cta-container">
-                    <a href="#contact" class="cta-pulse" data-i18n="cta1">Diagnostic Gratuit</a>
-                </div>
-            </div>
-            <div class="device-animation">
-                <div class="floating-device">
-                    <img src="laptop.png" alt="Laptop" class="laptop">
-                    <img src="console.png" alt="Console" class="console">
-                </div>
-            </div>
+    <section class="hero">
+        <div class="container">
+            <h2 class="lang-switch" data-en="Fast & Reliable Tech Repair" data-fr="Réparation Rapide & Fiable"></h2>
+            <p class="lang-switch" data-en="We fix laptops, consoles, and all your favorite devices" data-fr="Nous réparons ordinateurs, consoles et tous vos appareils"></p>
+            <a href="#contact" class="cta-button lang-switch" data-en="Book Repair Now" data-fr="Réserver Réparation"></a>
         </div>
     </section>
 
     <section id="services" class="services">
-        <h2 data-i18n="servicesTitle" class="section-title">Nos Services Premium</h2>
-        <div class="service-grid">
-            <article class="service-card glass-card">
-                <i class="fas fa-bolt"></i>
-                <h3 data-i18n="fastRepair">Réparation Express</h3>
-                <p data-i18n="fastRepairText">90% des réparations terminées en moins de 24h</p>
-                <div class="service-chip">Garantie 2 ans</div>
-            </article>
-            <article class="service-card glass-card">
-                <i class="fas fa-shield-alt"></i>
-                <h3 data-i18n="dataProtection">Protection des Données</h3>
-                <p data-i18n="dataProtectionText">Récupération sécurisée de vos données sensibles</p>
-                <div class="service-chip">100% sécurisé</div>
-            </article>
+        <div class="container">
+            <h3 class="lang-switch" data-en="Our Services" data-fr="Nos Services"></h3>
+            <div class="service-grid">
+                <div class="service-card">
+                    <img src="images/laptop-repair.jpg" alt="Laptop Repair">
+                    <h4 class="lang-switch" data-en="Laptop Repair" data-fr="Réparation d'Ordinateurs"></h4>
+                    <p class="lang-switch" data-en="Screen replacement, hardware upgrades, software fixes" data-fr="Remplacement d'écran, upgrades matériels, problèmes logiciels"></p>
+                </div>
+                <div class="service-card">
+                    <img src="images/console-repair.jpg" alt="Console Repair">
+                    <h4 class="lang-switch" data-en="Console Repair" data-fr="Réparation de Consoles"></h4>
+                    <p class="lang-switch" data-en="HDMI port repair, disc drive replacement, overheating solutions" data-fr="Réparation ports HDMI, remplacement lecteur CD, problèmes de surchauffe"></p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
-        <div class="contact-container glass-card">
-            <h2 data-i18n="contactTitle" class="section-title">Contact Rapide</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" required data-i18n-placeholder="name">
-                    <label data-i18n="name">Nom Complet</label>
-                </div>
-                <div class="form-group">
-                    <input type="email" required data-i18n-placeholder="email">
-                    <label data-i18n="email">Adresse Email</label>
-                </div>
-                <button type="submit" class="cta-gradient" data-i18n="send">
-                    Envoyer la Demande
-                    <i class="fas fa-arrow-right"></i>
-                </button>
+        <div class="container">
+            <h3 class="lang-switch" data-en="Contact Us" data-fr="Contactez-Nous"></h3>
+            <form id="contactForm">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone" required>
+                <select>
+                    <option class="lang-switch" data-en="Select Device" data-fr="Type d'appareil"></option>
+                    <option class="lang-switch" data-en="Laptop" data-fr="Ordinateur"></option>
+                    <option class="lang-switch" data-en="Console" data-fr="Console"></option>
+                </select>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit" class="cta-button lang-switch" data-en="Send Request" data-fr="Envoyer Demande"></button>
             </form>
         </div>
     </section>
