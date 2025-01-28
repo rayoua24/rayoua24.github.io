@@ -1,37 +1,51 @@
-// Fonction pour changer la langue
-document.getElementById('langToggle').addEventListener('click', () => {
+// Function to toggle between French and English
+document.getElementById('langToggle').addEventListener('click', function () {
     const isFrench = document.documentElement.lang === 'fr';
-    
+
     // Toggle language
     if (isFrench) {
         document.documentElement.lang = 'en';
+        
+        // Change texts to English
         document.getElementById('serviceLink').textContent = 'Services';
         document.getElementById('aboutLink').textContent = 'About Us';
         document.getElementById('contactLink').textContent = 'Contact';
-        document.querySelector('h2').textContent = 'Our Services';
-        document.querySelectorAll('p')[0].textContent = 'We repair laptops and gaming consoles.';
-        document.querySelectorAll('h2')[1].textContent = 'About Us';
-        document.querySelectorAll('p')[1].textContent = 'FixMyDevice is a reliable and fast repair service.';
-        document.querySelectorAll('h2')[2].textContent = 'Contact';
-        document.querySelector('label[for="name"]').textContent = 'Name';
-        document.querySelector('label[for="email"]').textContent = 'Email';
+        
+        document.getElementById('servicesTitle').textContent = 'Our Services';
+        document.getElementById('servicesDescription').textContent = 'We repair laptops and gaming consoles.';
+        
+        document.getElementById('aboutTitle').textContent = 'About Us';
+        document.getElementById('aboutDescription').textContent = 'FixMyDevice is a reliable and fast repair service.';
+        
+        document.getElementById('nameLabel').textContent = 'Name';
+        document.getElementById('emailLabel').textContent = 'Email';
+        
         document.querySelector('button[type="submit"]').textContent = 'Send';
-        document.querySelector('footer p').textContent = '© 2025 FixMyDevice - All rights reserved.';
+        document.getElementById('footerText').textContent = '© 2025 FixMyDevice - All rights reserved.';
+        
+        // Change the language toggle button text
         document.getElementById('langToggle').textContent = 'FR';
     } else {
         document.documentElement.lang = 'fr';
+        
+        // Change texts to French
         document.getElementById('serviceLink').textContent = 'Services';
         document.getElementById('aboutLink').textContent = 'À propos';
         document.getElementById('contactLink').textContent = 'Contact';
-        document.querySelector('h2').textContent = 'Nos Services';
-        document.querySelectorAll('p')[0].textContent = 'Nous réparons les ordinateurs portables et les consoles de jeux vidéo.';
-        document.querySelectorAll('h2')[1].textContent = 'À propos';
-        document.querySelectorAll('p')[1].textContent = 'FixMyDevice est un service de réparation fiable et rapide.';
-        document.querySelectorAll('h2')[2].textContent = 'Contact';
-        document.querySelector('label[for="name"]').textContent = 'Nom';
-        document.querySelector('label[for="email"]').textContent = 'Email';
+        
+        document.getElementById('servicesTitle').textContent = 'Nos Services';
+        document.getElementById('servicesDescription').textContent = 'Nous réparons les ordinateurs portables et les consoles de jeux vidéo.';
+        
+        document.getElementById('aboutTitle').textContent = 'À propos';
+        document.getElementById('aboutDescription').textContent = 'FixMyDevice est un service de réparation fiable et rapide.';
+        
+        document.getElementById('nameLabel').textContent = 'Nom';
+        document.getElementById('emailLabel').textContent = 'Email';
+        
         document.querySelector('button[type="submit"]').textContent = 'Envoyer';
-        document.querySelector('footer p').textContent = '© 2025 FixMyDevice - Tous droits réservés.';
+        document.getElementById('footerText').textContent = '© 2025 FixMyDevice - Tous droits réservés.';
+        
+        // Change the language toggle button text
         document.getElementById('langToggle').textContent = 'EN';
     }
 });
