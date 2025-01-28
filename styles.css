@@ -5,21 +5,16 @@
     font-family: Arial, sans-serif;
 }
 
-/* Body */
-body {
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Header */
+/* Blue Header Section */
 header {
-    background-color: #2a9d8f;
+    background-color: #2a9d8f; /* Blue background */
     color: white;
     padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-left: 20px;
 }
