@@ -6,23 +6,23 @@
 }
 
 html, body {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', sans-serif;
     height: 100%;
-    background-color: #2f343b; /* Dark gray background */
-    color: #f1f1f1; /* Light text color */
+    background-color: #222222; /* Dark background */
+    color: #e0e0e0; /* Light gray text */
 }
 
 /* Header */
 header {
-    background-color: #1c2128; /* Darker background for the header */
-    color: #00ffcc; /* Neon cyan text */
+    background-color: #1f1f1f; /* Darker background for the header */
+    color: #e0e0e0; /* Light text color */
     padding: 20px 0;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header .logo h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -36,20 +36,20 @@ nav ul {
 }
 
 nav a {
-    color: #00ffcc;
+    color: #e0e0e0;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #00b3b3; /* Lighter cyan on hover */
+    color: #f1f1f1; /* Slightly lighter text on hover */
 }
 
 button {
-    background-color: #00ffcc; /* Neon button */
+    background-color: #555555; /* Neutral gray button */
     border: none;
     padding: 10px 15px;
-    color: #1c2128;
+    color: #e0e0e0;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
@@ -57,31 +57,32 @@ button {
 }
 
 button:hover {
-    background-color: #00b3b3; /* Slightly darker cyan on hover */
-    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5); /* Glowing effect */
+    background-color: #777777; /* Lighter gray on hover */
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1); /* Subtle glow effect */
 }
 
 /* Hero Section */
 #hero {
-    background-color: #21272f; /* Dark gray with a subtle contrast */
-    color: #00ffcc; /* Neon text color */
+    background-color: #333333; /* Dark gray background */
+    color: #e0e0e0; /* Light gray text */
     text-align: center;
     padding: 60px 20px;
 }
 
 #hero h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 #hero p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
 .cta-button {
-    background-color: #00ffcc;
-    color: #1c2128;
+    background-color: #444444; /* Dark gray button */
+    color: #e0e0e0;
     padding: 15px 25px;
     font-size: 1.2rem;
     border-radius: 5px;
@@ -90,8 +91,8 @@ button:hover {
 }
 
 .cta-button:hover {
-    background-color: #00b3b3;
-    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5); /* Glowing effect */
+    background-color: #555555; /* Lighter gray button on hover */
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1); /* Subtle glow effect */
 }
 
 /* Services Section */
@@ -107,7 +108,7 @@ button:hover {
 #servicesTitle {
     font-size: 2.8rem;
     margin-bottom: 40px;
-    color: #00ffcc; /* Neon title color */
+    color: #f1f1f1; /* Light text color */
 }
 
 .service-cards {
@@ -120,44 +121,45 @@ button:hover {
 }
 
 .service-card {
-    background-color: #333a44; /* Dark card background */
+    background-color: #444444; /* Dark gray card background */
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card h3 {
     font-size: 1.8rem;
-    color: #00ffcc; /* Neon cyan text */
+    color: #f1f1f1; /* Light gray title */
     margin-bottom: 10px;
 }
 
 .service-card p {
-    color: #a0a0a0; /* Lighter gray text */
+    color: #bbb; /* Medium gray text for descriptions */
 }
 
 .service-card:hover {
-    transform: translateY(-10px); /* Hover effect for the card */
+    transform: translateY(-8px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* More prominent shadow on hover */
 }
 
 /* About Section */
 #about {
     padding: 60px 20px;
-    background-color: #1c2128;
+    background-color: #333333; /* Dark background for about section */
     text-align: center;
 }
 
 #aboutTitle {
     font-size: 2.8rem;
     margin-bottom: 20px;
-    color: #00ffcc; /* Neon cyan */
+    color: #f1f1f1; /* Light gray title */
 }
 
 #aboutDescription {
     font-size: 1.2rem;
-    color: #a0a0a0;
+    color: #bbb; /* Medium gray text */
 }
 
 /* Contact Section */
@@ -178,19 +180,19 @@ input, textarea {
     padding: 15px;
     font-size: 1rem;
     border-radius: 5px;
-    border: 1px solid #555; /* Dark border */
-    background-color: #2a3038; /* Slightly lighter background */
-    color: #f1f1f1;
+    border: 1px solid #444444; /* Dark border for input fields */
+    background-color: #333333; /* Dark background for form elements */
+    color: #e0e0e0; /* Light text */
     transition: border 0.3s ease;
 }
 
 input:focus, textarea:focus {
-    border-color: #00ffcc; /* Neon border when focused */
+    border-color: #777777; /* Lighter border color when focused */
 }
 
 button[type="submit"] {
-    background-color: #00ffcc;
-    color: #1c2128;
+    background-color: #555555;
+    color: #e0e0e0;
     padding: 15px;
     border: none;
     font-size: 1rem;
@@ -200,21 +202,17 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #00b3b3;
-    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+    background-color: #777777;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
 }
 
 /* Footer */
 footer {
-    background-color: #1c2128;
-    color: #00ffcc;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
     padding: 20px 0;
     text-align: center;
     margin-top: 60px;
-}
-
-footer p {
-    font-size: 1.2rem;
 }
 
 /* Responsive Design */
@@ -224,10 +222,6 @@ footer p {
     }
 
     .service-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .testimonial-cards {
         grid-template-columns: 1fr;
     }
 }
