@@ -1,92 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FixMyDevice - Laptop and Console Repair Service</title>
-    <link rel="stylesheet" href="style.css">
+    <title>FixMyDevice.ca - Réparation Expert Électronique</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <h1>FixMyDevice</h1>
-            <p>Your trusted partner in laptop and console repairs</p>
-            <div id="lang-switch">
-                <button onclick="switchLanguage('en')">EN</button>
-                <button onclick="switchLanguage('fr')">FR</button>
+    <!-- Floating Background Elements -->
+    <div class="gradient-blob"></div>
+    <div class="gradient-blob"></div>
+
+    <header class="glass-nav">
+        <nav>
+            <div class="logo">
+                <span class="logo-icon">🛠</span>
+                <span>FixMyDevice</span>.ca
             </div>
-        </div>
+            <ul class="nav-links">
+                <li><a href="#home" data-i18n="home">Accueil</a></li>
+                <li><a href="#services" data-i18n="services">Services</a></li>
+                <li><a href="#about" data-i18n="about">À Propos</a></li>
+                <li><a href="#contact" data-i18n="contact">Contact</a></li>
+                <li><button id="languageToggle" class="lang-toggle">FR/EN</button></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
+    <section id="home" class="hero">
         <div class="hero-content">
-            <h2 data-en="Get Your Devices Fixed in No Time!" data-fr="Réparez vos appareils en un rien de temps !">Get Your Devices Fixed in No Time!</h2>
-            <p data-en="We provide quick, affordable, and reliable repair services for laptops, gaming consoles, and more." 
-               data-fr="Nous fournissons des services de réparation rapides, abordables et fiables pour les ordinateurs portables, les consoles de jeux et plus encore.">
-                We provide quick, affordable, and reliable repair services for laptops, gaming consoles, and more.
-            </p>
-            <a href="#contact" class="btn-main">Contact Us</a>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="section">
-        <div class="container">
-            <h2 data-en="Our Services" data-fr="Nos Services">Our Services</h2>
-            <div class="service-cards">
-                <div class="service-card">
-                    <img src="laptop-repair.jpg" alt="Laptop Repair">
-                    <h3 data-en="Laptop Repair" data-fr="Réparation d'Ordinateur">Laptop Repair</h3>
-                    <p data-en="Screen replacements, motherboard fixes, and more." data-fr="Remplacement d'écrans, réparations de cartes mères et plus.">
-                        Screen replacements, motherboard fixes, and more.
-                    </p>
+            <div class="hero-text">
+                <h1 data-i18n="heroTitle">Réparation Express<br>de vos Appareils</h1>
+                <p class="subtitle" data-i18n="heroText">Réparations garanties en 24h pour consoles et ordinateurs</p>
+                <div class="cta-container">
+                    <a href="#contact" class="cta-pulse" data-i18n="cta1">Diagnostic Gratuit</a>
                 </div>
-                <div class="service-card">
-                    <img src="console-repair.jpg" alt="Console Repair">
-                    <h3 data-en="Console Repair" data-fr="Réparation de Console">Console Repair</h3>
-                    <p data-en="Fixing Xbox, PlayStation, and Nintendo consoles." data-fr="Réparation des consoles Xbox, PlayStation et Nintendo.">
-                        Fixing Xbox, PlayStation, and Nintendo consoles.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <img src="screen-replacement.jpg" alt="Screen Replacement">
-                    <h3 data-en="Screen Replacement" data-fr="Remplacement d'Écran">Screen Replacement</h3>
-                    <p data-en="Cracked or damaged screens? We’ve got you covered." data-fr="Écrans fissurés ou endommagés ? Nous avons la solution.">
-                        Cracked or damaged screens? We’ve got you covered.
-                    </p>
+            </div>
+            <div class="device-animation">
+                <div class="floating-device">
+                    <img src="laptop.png" alt="Laptop" class="laptop">
+                    <img src="console.png" alt="Console" class="console">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 data-en="Contact Us" data-fr="Contactez-Nous">Contact Us</h2>
-            <form id="contact-form">
-                <label for="name" data-en="Your Name" data-fr="Votre Nom">Your Name</label>
-                <input type="text" id="name" name="name" required>
+    <section id="services" class="services">
+        <h2 data-i18n="servicesTitle" class="section-title">Nos Services Premium</h2>
+        <div class="service-grid">
+            <article class="service-card glass-card">
+                <i class="fas fa-bolt"></i>
+                <h3 data-i18n="fastRepair">Réparation Express</h3>
+                <p data-i18n="fastRepairText">90% des réparations terminées en moins de 24h</p>
+                <div class="service-chip">Garantie 2 ans</div>
+            </article>
+            <article class="service-card glass-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3 data-i18n="dataProtection">Protection des Données</h3>
+                <p data-i18n="dataProtectionText">Récupération sécurisée de vos données sensibles</p>
+                <div class="service-chip">100% sécurisé</div>
+            </article>
+        </div>
+    </section>
 
-                <label for="email" data-en="Your Email" data-fr="Votre Email">Your Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message" data-en="Your Message" data-fr="Votre Message">Your Message</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit" data-en="Send Message" data-fr="Envoyer le Message">Send Message</button>
+    <section id="contact" class="contact">
+        <div class="contact-container glass-card">
+            <h2 data-i18n="contactTitle" class="section-title">Contact Rapide</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" required data-i18n-placeholder="name">
+                    <label data-i18n="name">Nom Complet</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" required data-i18n-placeholder="email">
+                    <label data-i18n="email">Adresse Email</label>
+                </div>
+                <button type="submit" class="cta-gradient" data-i18n="send">
+                    Envoyer la Demande
+                    <i class="fas fa-arrow-right"></i>
+                </button>
             </form>
         </div>
     </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <p>© 2025 FixMyDevice. All rights reserved.</p>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
