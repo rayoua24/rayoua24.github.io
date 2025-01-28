@@ -1,9 +1,9 @@
-// Changer la langue
+// Change language
 document.getElementById('langToggle').addEventListener('click', function () {
     const isFrench = document.documentElement.lang === 'fr';
 
     if (isFrench) {
-        document.documentElement.lang = 'en'; // Change to English
+        document.documentElement.lang = 'en'; // Switch to English
 
         // Update text to English
         document.getElementById('serviceLink').textContent = 'Services';
@@ -35,7 +35,7 @@ document.getElementById('langToggle').addEventListener('click', function () {
         document.getElementById('footerText').textContent = '© 2025 FixMyDevice - All rights reserved.';
 
     } else {
-        document.documentElement.lang = 'fr'; // Change to French
+        document.documentElement.lang = 'fr'; // Switch to French
 
         // Update text to French
         document.getElementById('serviceLink').textContent = 'Services';
