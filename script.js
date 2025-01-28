@@ -1,4 +1,4 @@
-// Function to toggle between French and English
+// Fonction pour changer de langue
 document.getElementById('langToggle').addEventListener('click', function () {
     const isFrench = document.documentElement.lang === 'fr';
 
@@ -6,46 +6,40 @@ document.getElementById('langToggle').addEventListener('click', function () {
     if (isFrench) {
         document.documentElement.lang = 'en';
         
-        // Change texts to English
+        // Changer les textes en anglais
         document.getElementById('serviceLink').textContent = 'Services';
         document.getElementById('aboutLink').textContent = 'About Us';
+        document.getElementById('testimonialsLink').textContent = 'Testimonials';
         document.getElementById('contactLink').textContent = 'Contact';
         
         document.getElementById('servicesTitle').textContent = 'Our Services';
-        document.getElementById('servicesDescription').textContent = 'We repair laptops and gaming consoles.';
+        document.getElementById('aboutTitle').textContent = 'About FixMyDevice';
+        document.getElementById('aboutDescription').textContent = 'FixMyDevice is your expert in laptop and gaming console repairs. We offer fast, reliable, and professional service for all your electronic devices.';
         
-        document.getElementById('aboutTitle').textContent = 'About Us';
-        document.getElementById('aboutDescription').textContent = 'FixMyDevice is a reliable and fast repair service.';
-        
-        document.getElementById('nameLabel').textContent = 'Name';
-        document.getElementById('emailLabel').textContent = 'Email';
+        document.getElementById('testimonialsTitle').textContent = 'What Our Clients Say';
         
         document.querySelector('button[type="submit"]').textContent = 'Send';
         document.getElementById('footerText').textContent = '© 2025 FixMyDevice - All rights reserved.';
         
-        // Change the language toggle button text
         document.getElementById('langToggle').textContent = 'FR';
     } else {
         document.documentElement.lang = 'fr';
         
-        // Change texts to French
+        // Revenir en français
         document.getElementById('serviceLink').textContent = 'Services';
         document.getElementById('aboutLink').textContent = 'À propos';
+        document.getElementById('testimonialsLink').textContent = 'Témoignages';
         document.getElementById('contactLink').textContent = 'Contact';
         
         document.getElementById('servicesTitle').textContent = 'Nos Services';
-        document.getElementById('servicesDescription').textContent = 'Nous réparons les ordinateurs portables et les consoles de jeux vidéo.';
+        document.getElementById('aboutTitle').textContent = 'À propos de FixMyDevice';
+        document.getElementById('aboutDescription').textContent = 'FixMyDevice est votre expert en réparation d\'ordinateurs portables et de consoles de jeux. Nous offrons un service rapide, fiable, et professionnel pour tous vos appareils électroniques.';
         
-        document.getElementById('aboutTitle').textContent = 'À propos';
-        document.getElementById('aboutDescription').textContent = 'FixMyDevice est un service de réparation fiable et rapide.';
-        
-        document.getElementById('nameLabel').textContent = 'Nom';
-        document.getElementById('emailLabel').textContent = 'Email';
+        document.getElementById('testimonialsTitle').textContent = 'Ce que nos clients disent';
         
         document.querySelector('button[type="submit"]').textContent = 'Envoyer';
         document.getElementById('footerText').textContent = '© 2025 FixMyDevice - Tous droits réservés.';
         
-        // Change the language toggle button text
         document.getElementById('langToggle').textContent = 'EN';
     }
 });
