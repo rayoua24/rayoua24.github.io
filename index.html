@@ -1,88 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FixMyDevice | Repair Services</title>
-  <link href="styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FixMyDevice</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>FixMyDevice</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services" id="serviceLink">Services</a></li>
+                <li><a href="#about" id="aboutLink">À propos</a></li>
+                <li><a href="#contact" id="contactLink">Contact</a></li>
+                <li><button id="langToggle">EN</button></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header>
-    <div class="container">
-      <h1>FixMyDevice</h1>
-      <nav>
-        <ul>
-          <li><a href="#" class="home">Home</a></li>
-          <li><a href="#about" class="about">About</a></li>
-          <li><a href="#services" class="services">Services</a></li>
-          <li><a href="#contact" class="contact">Contact</a></li>
-          <li><button id="lang-toggle" onclick="toggleLanguage()">Français</button></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <!-- Main Content -->
+    <main>
+        <section id="services">
+            <h2>Nos Services / Our Services</h2>
+            <p>Nous réparons les ordinateurs portables et les consoles de jeux vidéo. / We repair laptops and gaming consoles.</p>
+        </section>
 
-  <section class="intro">
-    <div class="container">
-      <h2 class="en">Reliable Repair Services for Consoles, PCs, and Laptops</h2>
-      <h2 class="fr">Services de réparation fiables pour consoles, PC et ordinateurs portables</h2>
-      <p class="en">At FixMyDevice, we provide quick, high-quality repair services for all your devices. No matter the problem, we’ve got you covered!</p>
-      <p class="fr">Chez FixMyDevice, nous offrons des services de réparation rapides et de haute qualité pour tous vos appareils. Quel que soit le problème, nous avons la solution !</p>
-      <a href="#services" class="btn en">Explore Services</a>
-      <a href="#services" class="btn fr">Explorer les services</a>
-    </div>
-  </section>
+        <section id="about">
+            <h2>À propos / About Us</h2>
+            <p>FixMyDevice est un service de réparation fiable et rapide. / FixMyDevice is a reliable and fast repair service.</p>
+        </section>
 
-  <section id="about" class="about-us">
-    <div class="container">
-      <h2 class="en">About Us</h2>
-      <h2 class="fr">À propos de nous</h2>
-      <p class="en">We offer a range of repair services for gaming consoles, PCs, and laptops, ensuring quick turnaround times and professional service.</p>
-      <p class="fr">Nous proposons une gamme de services de réparation pour consoles de jeux, PC et ordinateurs portables, garantissant des délais rapides et un service professionnel.</p>
-    </div>
-  </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Nom / Name</label>
+                <input type="text" id="name" name="name" required>
 
-  <section id="services" class="services">
-    <div class="container">
-      <h2 class="en">Our Repair Services</h2>
-      <h2 class="fr">Nos services de réparation</h2>
-      <div class="service-item">
-        <h3 class="en">Console Repairs</h3>
-        <h3 class="fr">Réparations de consoles</h3>
-        <p class="en">We specialize in repairing gaming consoles like PlayStation, Xbox, and Nintendo Switch. Fast, reliable service at affordable prices.</p>
-        <p class="fr">Nous nous spécialisons dans la réparation de consoles de jeux telles que PlayStation, Xbox et Nintendo Switch. Service rapide et fiable à des prix abordables.</p>
-      </div>
-      <div class="service-item">
-        <h3 class="en">PC Repairs</h3>
-        <h3 class="fr">Réparations de PC</h3>
-        <p class="en">We fix a variety of PC issues, including hardware and software problems, performance issues, and more.</p>
-        <p class="fr">Nous réparons divers problèmes de PC, y compris des problèmes matériels, logiciels, de performance et plus.</p>
-      </div>
-      <div class="service-item">
-        <h3 class="en">Laptop Repairs</h3>
-        <h3 class="fr">Réparations d'ordinateurs portables</h3>
-        <p class="en">Get your laptop repaired quickly and effectively, from screen replacements to battery and keyboard issues.</p>
-        <p class="fr">Réparez votre ordinateur portable rapidement et efficacement, des remplacements d'écran aux problèmes de batterie et de clavier.</p>
-      </div>
-    </div>
-  </section>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
 
-  <section id="contact" class="contact-us">
-    <div class="container">
-      <h2 class="en">Contact Us</h2>
-      <h2 class="fr">Contactez-nous</h2>
-      <p class="en">You can reach us via email at support@fixmydevice.com or call us at 1-800-123-4567.</p>
-      <p class="fr">Vous pouvez nous contacter par email à support@fixmydevice.com ou nous appeler au 1-800-123-4567.</p>
-    </div>
-  </section>
+                <button type="submit">Envoyer / Send</button>
+            </form>
+        </section>
+    </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 FixMyDevice. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 FixMyDevice - Tous droits réservés. / All rights reserved.</p>
+    </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
