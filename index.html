@@ -1,69 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FixMyDevice</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fix My Device</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="header">
+    <div class="container">
+      <h1 id="title">Réparez Mon Appareil</h1>
+      <select id="language-selector">
+        <option value="fr">Français</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+  </header>
 
-    <header>
-        <div class="logo">
-            <img src="robot.jpg" alt="FixMyDevice Logo" class="logo-img">
-            <h1>FixMyDevice</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <button id="langToggle">Français</button>
-    </header>
-
-    <section id="hero">
-        <h2>Welcome to FixMyDevice</h2>
-        <p>Your trusted tech repair service.</p>
-        <a href="#contact" class="cta-button">Get Started</a>
+  <main class="container">
+    <section class="hero">
+      <h2 id="subtitle">Service de réparation pour ordinateurs, consoles de jeux vidéo et plus encore.</h2>
+      <p id="description">Nous offrons des réparations rapides et fiables pour tous vos appareils électroniques.</p>
     </section>
 
-    <section id="services">
-        <h2 id="servicesTitle">Our Services</h2>
-        <div class="service-cards">
-            <div class="service-card">
-                <h3>Screen Repair</h3>
-                <p>Fix your broken screens with quality parts.</p>
-            </div>
-            <div class="service-card">
-                <h3>Battery Replacement</h3>
-                <p>Extend the life of your device with a new battery.</p>
-            </div>
-        </div>
-    </section>
+	<section class="services">
+	  <!-- Laptop Repair -->
+	  <div class="card">
+	    <img src="https://rayoua24.github.io/laptop.webp" alt="Laptop repair" class="card-img">
+	    <h3 id="laptops">Ordinateurs Portables</h3>
+	    <p id="laptops-desc">Nous offrons des réparations rapides et fiables pour tous vos appareils électroniques.</p>
+	  </div>
 
-    <section id="about">
-        <h2 id="aboutTitle">About Us</h2>
-        <p id="aboutDescription">FixMyDevice has been repairing devices with top-quality service since 2010.</p>
-    </section>
+	  <!-- Console Repair -->
+	  <div class="card">
+	    <img src="https://rayoua24.github.io/console.webp" alt="Console repair" class="card-img">
+	    <h3 id="consoles">Consoles de Jeux Vidéo</h3>
+	    <p id="consoles-desc">Nous offrons des réparations rapides et fiables pour tous vos appareils électroniques.</p>
+	  </div>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" id="name" placeholder="Your Name">
-            <input type="email" id="email" placeholder="Your Email">
-            <textarea id="message" placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+	  <!-- Desktop PC Repair -->
+	  <div class="card">
+	    <img src="https://rayoua24.github.io/desktop.webp" alt="PC repair" class="card-img">
+	    <h3 id="pcs">Ordinateurs de Bureau</h3>
+	    <p id="pcs-desc">Nous offrons des réparations rapides et fiables pour tous vos appareils électroniques.</p>
+	  </div>
+	</section>
 
-    <footer>
-        <p>&copy; 2025 FixMyDevice. All rights reserved.</p>
-    </footer>
+    <div class="cta">
+      <button id="cta-button">Obtenir une Estimation</button>
+    </div>
+  </main>
 
-    <script src="script.js"></script>
+  <footer class="footer">
+    <p>&copy; 2025 Fix My Device. <span id="contact">Contactez-Nous</span></p>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
