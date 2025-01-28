@@ -138,37 +138,6 @@ button:hover {
     color: #7f8c8d;
 }
 
-/* Testimonials Section */
-#testimonials {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-#testimonialsTitle {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-}
-
-.testimonial-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
-}
-
-.testimonial-card {
-    background-color: white;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-style: italic;
-}
-
-.testimonial-card span {
-    font-size: 1rem;
-    color: #7f8c8d;
-    margin-top: 15px;
-}
-
 /* Contact Section */
 #contact {
     padding: 60px 20px;
@@ -221,10 +190,6 @@ footer {
     }
 
     .service-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .testimonial-cards {
         grid-template-columns: 1fr;
     }
 }
