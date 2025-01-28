@@ -104,7 +104,8 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
-    justify-items: center; /* This will center the service cards */
+    justify-items: center; /* This ensures each card is centered */
+    align-items: center;  /* This ensures cards are vertically centered */
 }
 
 .service-card {
@@ -160,72 +161,4 @@ button:hover {
     background-color: white;
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-style: italic;
-}
-
-.testimonial-card span {
-    font-size: 1rem;
-    color: #7f8c8d;
-    margin-top: 15px;
-}
-
-/* Contact Section */
-#contact {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-input, textarea {
-    padding: 15px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-button[type="submit"] {
-    background-color: #2a9d8f;
-    color: white;
-    padding: 15px;
-    border: none;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {
-    background-color: #e76f51;
-}
-
-/* Footer */
-footer {
-    background-color: #34495e;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: 60px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    #hero h2 {
-        font-size: 2rem;
-    }
-
-    .service-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .testimonial-cards {
-        grid-template-columns: 1fr;
-    }
-}
+    box-shadow: 0 
