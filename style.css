@@ -6,23 +6,25 @@
 }
 
 html, body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Mono', monospace;
     height: 100%;
-    background-color: #f1f1f1;
+    background-color: #2f343b; /* Dark gray background */
+    color: #f1f1f1; /* Light text color */
 }
 
 /* Header */
 header {
-    background-color: #34495e;
-    color: white;
+    background-color: #1c2128; /* Darker background for the header */
+    color: #00ffcc; /* Neon cyan text */
     padding: 20px 0;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 header .logo h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 nav ul {
@@ -34,59 +36,62 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: #00ffcc;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #e76f51;
+    color: #00b3b3; /* Lighter cyan on hover */
 }
 
 button {
-    background-color: #e76f51;
+    background-color: #00ffcc; /* Neon button */
     border: none;
-    padding: 8px 12px;
-    color: white;
+    padding: 10px 15px;
+    color: #1c2128;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-    background-color: #f4a261;
+    background-color: #00b3b3; /* Slightly darker cyan on hover */
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5); /* Glowing effect */
 }
 
 /* Hero Section */
 #hero {
-    background-color: #2a9d8f;
-    color: white;
+    background-color: #21272f; /* Dark gray with a subtle contrast */
+    color: #00ffcc; /* Neon text color */
     text-align: center;
     padding: 60px 20px;
 }
 
 #hero h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
 #hero p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 20px;
 }
 
 .cta-button {
-    background-color: #e76f51;
-    color: white;
+    background-color: #00ffcc;
+    color: #1c2128;
     padding: 15px 25px;
     font-size: 1.2rem;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #f4a261;
+    background-color: #00b3b3;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5); /* Glowing effect */
 }
 
 /* Services Section */
@@ -95,54 +100,64 @@ button:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the items horizontally */
-    justify-content: center; /* Center the content vertically */
+    align-items: center;
+    justify-content: center;
 }
 
 #servicesTitle {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 40px;
+    color: #00ffcc; /* Neon title color */
 }
 
 .service-cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
-    max-width: 1200px; /* Maximum width for the grid */
+    max-width: 1200px;
     width: 100%;
-    justify-content: center; /* Center the grid horizontally */
+    justify-content: center;
 }
 
 .service-card {
-    background-color: white;
+    background-color: #333a44; /* Dark card background */
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
+    transition: transform 0.3s ease;
 }
 
 .service-card h3 {
     font-size: 1.8rem;
-    color: #2a9d8f;
+    color: #00ffcc; /* Neon cyan text */
     margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #a0a0a0; /* Lighter gray text */
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Hover effect for the card */
 }
 
 /* About Section */
 #about {
     padding: 60px 20px;
-    background-color: #ecf0f1;
+    background-color: #1c2128;
     text-align: center;
 }
 
 #aboutTitle {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 20px;
-    color: #34495e;
+    color: #00ffcc; /* Neon cyan */
 }
 
 #aboutDescription {
-    font-size: 1.1rem;
-    color: #7f8c8d;
+    font-size: 1.2rem;
+    color: #a0a0a0;
 }
 
 /* Contact Section */
@@ -163,40 +178,56 @@ input, textarea {
     padding: 15px;
     font-size: 1rem;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #555; /* Dark border */
+    background-color: #2a3038; /* Slightly lighter background */
+    color: #f1f1f1;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #00ffcc; /* Neon border when focused */
 }
 
 button[type="submit"] {
-    background-color: #2a9d8f;
-    color: white;
+    background-color: #00ffcc;
+    color: #1c2128;
     padding: 15px;
     border: none;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button[type="submit"]:hover {
-    background-color: #e76f51;
+    background-color: #00b3b3;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
 }
 
 /* Footer */
 footer {
-    background-color: #34495e;
-    color: white;
+    background-color: #1c2128;
+    color: #00ffcc;
     padding: 20px 0;
     text-align: center;
     margin-top: 60px;
 }
 
+footer p {
+    font-size: 1.2rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     #hero h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .service-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-cards {
         grid-template-columns: 1fr;
     }
 }
