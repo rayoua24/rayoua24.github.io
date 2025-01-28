@@ -1,70 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FixMyDevice - Professional Repair Services</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FixMyDevice | Repair Services</title>
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 id="logo">FixMyDevice.ca</h1>
-            <nav>
-                <ul>
-                    <li><a href="#services" class="lang-switch" data-en="Services" data-fr="Services"></a></li>
-                    <li><a href="#about" class="lang-switch" data-en="About" data-fr="À propos"></a></li>
-                    <li><a href="#contact" class="lang-switch" data-en="Contact" data-fr="Contact"></a></li>
-                </ul>
-            </nav>
-            <button id="languageToggle">FR/EN</button>
-        </div>
-    </header>
 
-    <section class="hero">
-        <div class="container">
-            <h2 class="lang-switch" data-en="Fast & Reliable Tech Repair" data-fr="Réparation Rapide & Fiable"></h2>
-            <p class="lang-switch" data-en="We fix laptops, consoles, and all your favorite devices" data-fr="Nous réparons ordinateurs, consoles et tous vos appareils"></p>
-            <a href="#contact" class="cta-button lang-switch" data-en="Book Repair Now" data-fr="Réserver Réparation"></a>
-        </div>
-    </section>
+  <header>
+    <div class="container">
+      <h1>FixMyDevice</h1>
+      <nav>
+        <ul>
+          <li><a href="#" class="home">Home</a></li>
+          <li><a href="#" class="about">About</a></li>
+          <li><a href="#" class="services">Services</a></li>
+          <li><a href="#" class="contact">Contact</a></li>
+          <li><button id="lang-toggle" onclick="toggleLanguage()">Français</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section id="services" class="services">
-        <div class="container">
-            <h3 class="lang-switch" data-en="Our Services" data-fr="Nos Services"></h3>
-            <div class="service-grid">
-                <div class="service-card">
-                    <img src="images/laptop-repair.jpg" alt="Laptop Repair">
-                    <h4 class="lang-switch" data-en="Laptop Repair" data-fr="Réparation d'Ordinateurs"></h4>
-                    <p class="lang-switch" data-en="Screen replacement, hardware upgrades, software fixes" data-fr="Remplacement d'écran, upgrades matériels, problèmes logiciels"></p>
-                </div>
-                <div class="service-card">
-                    <img src="images/console-repair.jpg" alt="Console Repair">
-                    <h4 class="lang-switch" data-en="Console Repair" data-fr="Réparation de Consoles"></h4>
-                    <p class="lang-switch" data-en="HDMI port repair, disc drive replacement, overheating solutions" data-fr="Réparation ports HDMI, remplacement lecteur CD, problèmes de surchauffe"></p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="intro">
+    <div class="container">
+      <h2 class="en">Reliable Repair Services for Consoles, PCs, and Laptops</h2>
+      <h2 class="fr">Services de réparation fiables pour consoles, PC et ordinateurs portables</h2>
+      <p class="en">At FixMyDevice, we provide quick, high-quality repair services for all your devices. No matter the problem, we’ve got you covered!</p>
+      <p class="fr">Chez FixMyDevice, nous offrons des services de réparation rapides et de haute qualité pour tous vos appareils. Quel que soit le problème, nous avons la solution !</p>
+      <a href="#" class="btn en">Explore Services</a>
+      <a href="#" class="btn fr">Explorer les services</a>
+    </div>
+  </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h3 class="lang-switch" data-en="Contact Us" data-fr="Contactez-Nous"></h3>
-            <form id="contactForm">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="tel" placeholder="Phone" required>
-                <select>
-                    <option class="lang-switch" data-en="Select Device" data-fr="Type d'appareil"></option>
-                    <option class="lang-switch" data-en="Laptop" data-fr="Ordinateur"></option>
-                    <option class="lang-switch" data-en="Console" data-fr="Console"></option>
-                </select>
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit" class="cta-button lang-switch" data-en="Send Request" data-fr="Envoyer Demande"></button>
-            </form>
-        </div>
-    </section>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 FixMyDevice. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
