@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FixMyDevice</title>
+    <title>FixMyDevice - Réparation d'ordinateurs et consoles</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,6 +17,7 @@
             <ul>
                 <li><a href="#services" id="serviceLink">Services</a></li>
                 <li><a href="#about" id="aboutLink">À propos</a></li>
+                <li><a href="#testimonials" id="testimonialsLink">Témoignages</a></li>
                 <li><a href="#contact" id="contactLink">Contact</a></li>
                 <li><button id="langToggle">EN</button></li>
             </ul>
@@ -25,26 +26,61 @@
 
     <!-- Main Content -->
     <main>
+        <!-- Services Section -->
         <section id="services">
-            <h2 id="servicesTitle">Nos Services / Our Services</h2>
-            <p id="servicesDescription">Nous réparons les ordinateurs portables et les consoles de jeux vidéo. / We repair laptops and gaming consoles.</p>
+            <h2 id="servicesTitle">Nos Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Réparation d'ordinateurs portables</h3>
+                    <p>Réparation rapide de toutes marques : Lenovo, HP, Dell, MacBook, etc.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Réparation de consoles de jeux vidéo</h3>
+                    <p>Console PlayStation, Xbox, Nintendo Switch. Réparation de toutes pannes matérielles.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Maintenance et optimisation</h3>
+                    <p>Maintenance préventive, nettoyage de votre appareil, et amélioration des performances.</p>
+                </div>
+            </div>
         </section>
 
+        <!-- About Section -->
         <section id="about">
-            <h2 id="aboutTitle">À propos / About Us</h2>
-            <p id="aboutDescription">FixMyDevice est un service de réparation fiable et rapide. / FixMyDevice is a reliable and fast repair service.</p>
+            <h2 id="aboutTitle">À propos de FixMyDevice</h2>
+            <p id="aboutDescription">FixMyDevice est votre expert en réparation d'ordinateurs portables et de consoles de jeux. Nous offrons un service rapide, fiable, et professionnel pour tous vos appareils électroniques.</p>
         </section>
 
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <h2 id="testimonialsTitle">Ce que nos clients disent</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>"Service rapide et très professionnel. Mon ordinateur est comme neuf !" - Marc L.</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Réparations de consoles impeccables. Très satisfait du service." - Sophie D.</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Excellente expérience. L'équipe est très réactive et compétente." - Alexandre V.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
         <section id="contact">
-            <h2>Contact</h2>
+            <h2>Contactez-nous</h2>
             <form>
-                <label for="name" id="nameLabel">Nom / Name</label>
+                <label for="name">Nom</label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="email" id="emailLabel">Email</label>
+                <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
 
-                <button type="submit">Envoyer / Send</button>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Envoyer</button>
             </form>
         </section>
     </main>
