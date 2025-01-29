@@ -21,6 +21,12 @@ const translations = {
       emailPlaceholder: "Votre email",
       issuePlaceholder: "Décrivez brièvement le problème",
       submit: "Soumettre",
+      deviceOptions: {
+        laptop: "Ordinateur Portable",
+        console: "Console",
+        pc: "Ordinateur de Bureau",
+        other: "Autre",
+      }
     },
   },
   en: {
@@ -45,6 +51,12 @@ const translations = {
       emailPlaceholder: "Your email",
       issuePlaceholder: "Briefly describe the problem",
       submit: "Submit",
+      deviceOptions: {
+        laptop: "Laptop",
+        console: "Console",
+        pc: "Desktop Computer",
+        other: "Other",
+      }
     },
   },
 };
@@ -107,7 +119,14 @@ languageSelector.addEventListener("change", (event) => {
   emailInput.placeholder = t.form.emailPlaceholder;
   issueInput.placeholder = t.form.issuePlaceholder;
   submitButton.textContent = t.form.submit;
+
+  // ✅ Update Device Dropdown Options
+  document.getElementById("option-laptop").textContent = t.form.deviceOptions.laptop;
+  document.getElementById("option-console").textContent = t.form.deviceOptions.console;
+  document.getElementById("option-pc").textContent = t.form.deviceOptions.pc;
+  document.getElementById("option-other").textContent = t.form.deviceOptions.other;
 });
+
 document.getElementById("get-quote-form").addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent default form submission
   const form = this;
