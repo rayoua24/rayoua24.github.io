@@ -23,31 +23,56 @@
       <p id="description">Nous offrons des réparations rapides et fiables pour tous vos appareils électroniques.</p>
     </section>
 
-	<section class="services">
-	  <!-- Laptop Repair -->
-	  <div class="card">
-	    <img src="https://rayoua24.github.io/laptop.webp" alt="Laptop repair" class="card-img">
-	    <h3 id="laptops">Ordinateurs Portables</h3>
-	    <p id="laptops-desc">Nous offrons des réparations rapides et fiables pour tous vos appareils électroniques.</p>
-	  </div>
+    <section class="services">
+      <!-- Laptop Repair -->
+      <div class="card">
+        <img src="https://rayoua24.github.io/laptop.webp" alt="Laptop repair" class="card-img">
+        <h3 id="laptops">Ordinateurs Portables</h3>
+        <p id="laptops-desc">Que ce soit un écran fissuré, un clavier défectueux ou des problèmes de performance, nous réparons toutes les marques et modèles d'ordinateurs portables.</p>
+      </div>
 
-	  <!-- Console Repair -->
-	  <div class="card">
-	    <img src="https://rayoua24.github.io/console.webp" alt="Console repair" class="card-img">
-	    <h3 id="consoles">Consoles de Jeux Vidéo</h3>
-	    <p id="consoles-desc">Nous offrons des réparations rapides et fiables pour tous vos appareils électroniques.</p>
-	  </div>
+      <!-- Console Repair -->
+      <div class="card">
+        <img src="https://rayoua24.github.io/console.webp" alt="Console repair" class="card-img">
+        <h3 id="consoles">Consoles de Jeux Vidéo</h3>
+        <p id="consoles-desc">Votre console surchauffe ou plante pendant vos parties? Nous réparons les PlayStation, Xbox, Nintendo et plus encore.</p>
+      </div>
 
-	  <!-- Desktop PC Repair -->
-	  <div class="card">
-	    <img src="https://rayoua24.github.io/desktop.webp" alt="PC repair" class="card-img">
-	    <h3 id="pcs">Ordinateurs de Bureau</h3>
-	    <p id="pcs-desc">Nous offrons des réparations rapides et fiables pour tous vos appareils électroniques.</p>
-	  </div>
-	</section>
+      <!-- Desktop PC Repair -->
+      <div class="card">
+        <img src="https://rayoua24.github.io/desktop.webp" alt="PC repair" class="card-img">
+        <h3 id="pcs">Ordinateurs de Bureau</h3>
+        <p id="pcs-desc">Des mises à niveau de matériel à la résolution de problèmes logiciels, nous réparons tout pour que votre ordinateur fonctionne comme neuf.</p>
+      </div>
+    </section>
 
     <div class="cta">
       <button id="cta-button">Obtenir une Estimation</button>
+    </div>
+
+    <!-- Quote Form -->
+    <div id="quote-form" class="hidden">
+      <form id="get-quote-form">
+        <h3 id="form-title">Obtenez une Estimation</h3>
+        <label for="name" id="name-label">Nom:</label>
+        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+        
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Votre email" required>
+        
+        <label for="device" id="device-label">Type d'Appareil:</label>
+        <select id="device" name="device" required>
+          <option value="laptop">Ordinateur Portable</option>
+          <option value="console">Console</option>
+          <option value="pc">Ordinateur de Bureau</option>
+          <option value="other">Autre</option>
+        </select>
+        
+        <label for="issue" id="issue-label">Décrivez le Problème:</label>
+        <textarea id="issue" name="issue" rows="4" placeholder="Décrivez brièvement le problème" required></textarea>
+        
+        <button type="submit" id="submit-button" class="cta-button">Soumettre</button>
+      </form>
     </div>
   </main>
 
