@@ -108,3 +108,23 @@ languageSelector.addEventListener("change", (event) => {
   issueInput.placeholder = t.form.issuePlaceholder;
   submitButton.textContent = t.form.submit;
 });
+document.getElementById("get-quote-form").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent default form submission
+  const form = this;
+  const formData = new FormData(form);
+  
+  fetch(form.action, {
+    method: form.method,
+    body: formData,
+    headers: { "Accept": "application/json" }
+  }).then(response => {
+    if (response.ok) {
+      document.getElementById("form-status").innerHTML = "✅ Votre demande a été envoyée avec succès!";
+      form.reset(); // Clear form after submission
+    } else {
+      document.getElementById("form-status").innerHTML = "❌ Une erreur s'est produite, réessayez.";
+    }
+  }).catch(error => {
+    document.getElementById("form-status").innerHTML = "❌ Erreur de connexion!";
+  });
+});

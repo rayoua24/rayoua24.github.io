@@ -51,27 +51,30 @@
     </div>
 
     <div id="quote-form" class="hidden">
-      <form id="get-quote-form">
-        <h3 id="form-title">Obtenez une Estimation</h3>
-        <label for="name" id="name-label">Nom:</label>
-        <input type="text" id="name" name="name" placeholder="Votre nom" required>
-        
-        <label for="email" id="email-label">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Votre email" required>
-        
-        <label for="device" id="device-label">Type d'Appareil:</label>
-        <select id="device" name="device" required>
-          <option value="laptop">Ordinateur Portable</option>
-          <option value="console">Console</option>
-          <option value="pc">Ordinateur de Bureau</option>
-          <option value="other">Autre</option>
-        </select>
-        
-        <label for="issue" id="issue-label">Décrivez le Problème:</label>
-        <textarea id="issue" name="issue" rows="4" placeholder="Décrivez brièvement le problème" required></textarea>
-        
-        <button type="submit" id="submit-button" class="cta-button">Soumettre</button>
-      </form>
+	  <form id="get-quote-form" action="https://formspree.io/f/mqaebzap" method="POST">
+	    <h3 id="form-title">Obtenez une Estimation</h3>
+
+	    <label for="name" id="name-label">Nom:</label>
+	    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+	    <label for="email" id="email-label">Email:</label>
+	    <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+	    <label for="device" id="device-label">Type d'Appareil:</label>
+	    <select id="device" name="device" required>
+	      <option value="laptop">Ordinateur Portable</option>
+	      <option value="console">Console</option>
+	      <option value="pc">Ordinateur de Bureau</option>
+	      <option value="other">Autre</option>
+	    </select>
+
+	    <label for="issue" id="issue-label">Décrivez le Problème:</label>
+	    <textarea id="issue" name="issue" rows="4" placeholder="Décrivez brièvement le problème" required></textarea>
+
+	    <button type="submit" id="submit-button" class="cta-button">Soumettre</button>
+	    <p id="form-status"></p>
+	  </form>
+      
     </div>
   </main>
 
