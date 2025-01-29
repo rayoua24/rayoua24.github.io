@@ -9,8 +9,11 @@
 <body>
   <header class="header">
     <div class="container">
-      <h1 id="title">Réparez Mon Appareil</h1>
-      <select id="language-selector">
+      <div class="logo-title">
+        <img src="https://rayoua24.github.io/logo.png" alt="Fix My Device Logo" class="logo">
+        <h1 id="title">FIX MY DEVICE</h1>
+      </div>
+      <select id="language-selector" aria-label="Select Language">
         <option value="fr">Français</option>
         <option value="en">English</option>
       </select>
@@ -24,23 +27,20 @@
     </section>
 
     <section class="services">
-      <!-- Laptop Repair -->
       <div class="card">
-        <img src="https://rayoua24.github.io/laptop.jpg" alt="Laptop repair" class="card-img">
+        <img src="https://rayoua24.github.io/laptop.jpg" alt="Laptop repair" class="card-img" loading="lazy">
         <h3 id="laptops">Ordinateurs Portables</h3>
         <p id="laptops-desc">Que ce soit un écran fissuré, un clavier défectueux ou des problèmes de performance, nous réparons toutes les marques et modèles d'ordinateurs portables.</p>
       </div>
 
-      <!-- Console Repair -->
       <div class="card">
-        <img src="https://rayoua24.github.io/console.jpg" alt="Console repair" class="card-img">
+        <img src="https://rayoua24.github.io/console.jpg" alt="Console repair" class="card-img" loading="lazy">
         <h3 id="consoles">Consoles de Jeux Vidéo</h3>
         <p id="consoles-desc">Votre console surchauffe ou plante pendant vos parties? Nous réparons les PlayStation, Xbox, Nintendo et plus encore.</p>
       </div>
 
-      <!-- Desktop PC Repair -->
       <div class="card">
-        <img src="https://rayoua24.github.io/desktop.jpg" alt="PC repair" class="card-img">
+        <img src="https://rayoua24.github.io/desktop.jpg" alt="PC repair" class="card-img" loading="lazy">
         <h3 id="pcs">Ordinateurs de Bureau</h3>
         <p id="pcs-desc">Des mises à niveau de matériel à la résolution de problèmes logiciels, nous réparons tout pour que votre ordinateur fonctionne comme neuf.</p>
       </div>
@@ -50,7 +50,6 @@
       <button id="cta-button">Obtenir une Estimation</button>
     </div>
 
-    <!-- Quote Form -->
     <div id="quote-form" class="hidden">
       <form id="get-quote-form">
         <h3 id="form-title">Obtenez une Estimation</h3>

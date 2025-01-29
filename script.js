@@ -1,6 +1,6 @@
 const translations = {
   fr: {
-    title: "Réparez Mon Appareil",
+    title: "FIX MY DEVICE",
     subtitle: "Service de réparation pour ordinateurs, consoles de jeux vidéo et plus encore.",
     description: "Nous offrons des réparations rapides et fiables pour tous vos appareils électroniques.",
     laptops: "Ordinateurs Portables",
@@ -24,7 +24,7 @@ const translations = {
     },
   },
   en: {
-    title: "Fix My Device",
+    title: "FIX MY DEVICE",
     subtitle: "Repair service for laptops, video game consoles, and more.",
     description: "We provide fast and reliable repairs for all your electronic devices.",
     laptops: "Laptops",

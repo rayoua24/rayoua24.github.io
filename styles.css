@@ -15,25 +15,116 @@ body {
 
 /* Header Styling */
 .header {
-  background-color: #0078d7;
-  color: white;
+  background: linear-gradient(135deg, #0078d7, #005bb5);
   padding: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
+
+/* Logo and Title */
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+/* Animated Logo */
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+  border-radius: 50%;
+  background: white;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  
+  /* Entrance Animation */
+  animation: logoAppear 1s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Logo Hover Effect */
+.logo:hover {
+  transform: scale(1.1) rotate(5deg);
+  animation: bounce 0.6s ease infinite alternate;
+}
+
+/* Keyframes for Initial Logo Animation */
+@keyframes logoAppear {
+  0% {
+    transform: scale(0.8) rotate(-10deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for Hover Bounce Effect */
+@keyframes bounce {
+  from {
+    transform: scale(1.1) rotate(5deg);
+  }
+  to {
+    transform: scale(1.15) rotate(-5deg);
+  }
+}
+
+/* Header Title */
 .header h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
 }
+
+/* Language Selector */
 .header select {
-  padding: 0.5rem;
-  border-radius: 5px;
+  padding: 0.6rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: white;
+  color: #0078d7;
+  border: none;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
 }
+
+.header select:hover {
+  background: #0078d7;
+  color: white;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+  text-align: center;
+  width: 100%;
+}
+
 
 /* Hero Section */
 .hero {
@@ -140,9 +231,6 @@ body {
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
-  display: block;
-  margin: 0 auto;
-  transition: background 0.3s ease;
 }
 
 #quote-form .cta-button:hover {
